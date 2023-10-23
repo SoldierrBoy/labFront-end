@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблиця</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="audioChange.js"></script>
+</head>
+<body>
+    <img src="groupmates/video/066b.gif">
+<a href="../lab4.html">Повернутись</a>
+<table>
+    <tr>
+        <th colspan="4">Мої одногрупники</th>
+    </tr>
+    <tr>
+        <td>
+            <a href="groupmates/Pavlo.html" onclick="changeAudio('groupmates/music/Rammstein - Deutschland.mp4', 'groupmates/video/Rammstein - Deutschland.mp4')" target="iframe_a">
+            <img src="groupmates/photo/image1.jpg" >
+        </a>
+            Молитовник Павло Олегович
+        </td>
+        <td>
+            <a href="groupmates/Roman.html" onclick="changeAudio('groupmates/music/Imagine Dragons - Bones (Official Music Video).mp4', 'groupmates/video/Imagine Dragons - Bones (Official Music Video).mp4')" target="iframe_a">
+            <img src="groupmates/photo/image2.jpg">
+        </a>
+        Семенишин Роман Сергійович
+        </td>
+        <td>
+            <a href="groupmates/Zahar.html" onclick="changeAudio('groupmates/music/Was wollen wir.mp4', 'groupmates/video/Was wollen wir.mp4')" target="iframe_a" class="changeAudio">
+                <img src="groupmates/photo/image3.jpg">
+        </a>
+        Савчин Захар Петрович
+        </td>
+        <td>
+            <a href="groupmates/Denys.html" onclick="changeAudio('groupmates/music/Lana Del Rey - Summertime Sadness (Official Music Video).mp4', 'groupmates/video/Lana Del Rey - Summertime Sadness (Official Music Video).mp4')" target="iframe_a">
+            <img src="groupmates/photo/image4.jpg">
+        </a>
+        Морис Денис Романови
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <iframe name="iframe_a" src="" class="iframeclass"></iframe>
+        </td>
+    </tr>
+</table>
+<audio id="myAudio" controls>
+    <source src="" type="audio/mpeg">
+</audio>
+<video id="myVideo" controls>
+    <source src="">
+</video>
+</body>
+</html>
