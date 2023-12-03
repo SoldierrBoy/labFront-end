@@ -1,0 +1,38 @@
+body {
+    background-color: #f8f9fa; /* Light gray background */
+    color: #495057; /* Dark gray text */
+}
+
+header {
+    background-color: #28a745; /* Green header */
+    padding: 10px 0;
+    color: #fff; /* White text */
+}
+
+nav.navbar {
+    background-color: #28a745; /* Green navbar */
+}
+
+section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h1, h2 {
+    color: #28a745; /* Green headings */
+}
+
+.card {
+    border: 2px solid #28a745; /* Green border for cards */
+    border-radius: 10px;
+}
+
+.btn-outline-success {
+    color: #28a745; /* Green text for search button */
+    border-color: #28a745; /* Green border for search button */
+}
+
+.btn-outline-success:hover {
+    background-color: #218838; /* Darker green background on hover for search button */
+    color: #fff; /* White text on hover for search button */
+}
