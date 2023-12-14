@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Веб-форма Демонстрація</title>
+
+    <style>
+        
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+     
+        a:active {
+            color: red;
+        }
+
+     
+        a:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+
+      
+        a:link {
+            color: #333;
+        }
+
+       
+        a:visited {
+            color: purple;
+        }
+
+        
+        label::before {
+            content: "►"; 
+            margin-right: 5px;
+        }
+
+        
+        label::after {
+            content: ":";
+            margin-left: 5px;
+        }
+
+        
+        label::first-letter {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+
+        label::first-line {
+            text-transform: uppercase;
+        }
+        input:enabled {
+        border: 1px solid #ccc;
+        background-color: #fff;
+    }
+    label:nth-last-of-type(2) {
+        color: green;
+    }
+
+    /* Стилі для відповідного елемента, до якого посилання веде */
+    :target {
+        background-color: yellow;
+    }
+
+    /* Приклад для :checked, наприклад, для вибраних опцій checkbox */
+    input[type="checkbox"]:checked {
+        background-color: lightblue;
+    }
+    </style>
+</head>
+<body>
+
+    <form action="#" method="post">
+
+        <!-- Демонстрація однорядкового текстового поля -->
+        <label for="single-line">Однорядкове текстове поле:</label>
+        <input type="text" id="single-line" name="single-line" required>
+
+        <br><br>
+
+        <!-- Форма, що використовує багаторядкову текстову область -->
+        <label for="multi-line">Багаторядкова текстова область:</label>
+        <textarea id="multi-line" name="multi-line" rows="4" cols="50" required></textarea>
+
+        <br><br>
+
+        <!-- Демонстрація значень password, email, range властивості type тегу input -->
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+
+        <br><br>
+
+        <label for="email">Електронна пошта:</label>
+        <input type="email" id="email" name="email" required>
+
+        <br><br>
+
+        <label for="range">Діапазон:</label>
+        <input type="range" id="range" name="range" min="0" max="100">
+
+        <br><br>
+
+        <!-- Форма, що використовує два незалежні перемикача єдиного вибору (radio) і кнопку відправки даних -->
+        <fieldset>
+            <legend>Виберіть опцію:</legend>
+            <label for="option1"><input type="radio" id="option1" name="options" value="option1"> Опція 1</label>
+            <label for="option2"><input type="radio" id="option2" name="options" value="option2"> Опція 2</label>
+        </fieldset>
+
+        <br><br>
+
+        <!-- Приклад активізації за замовчуванням одного з варіантів вибору, що надаються перемикачем -->
+        <label for="default-option"><input type="checkbox" id="default-option" name="default-option" checked> Варіант за замовчуванням</label>
+
+        <br><br>
+
+        <!-- Демонстрація використання прапорців для множинного вибору варіантів -->
+        <label>Виберіть опції:</label>
+        <label for="optionA"><input type="checkbox" id="optionA" name="options[]" value="optionA"> Опція A</label>
+        <label for="optionB"><input type="checkbox" id="optionB" name="options[]" value="optionB"> Опція B</label>
+
+        <br><br>
+
+        <!-- Приклад використання випадаючого списку єдиного вибору та групування елементів списку (optgroup) -->
+        <label for="dropdown">Виберіть зі списку:</label>
+        <select id="dropdown" name="dropdown">
+            <optgroup label="Група 1">
+                <option value="option1">Опція 1</option>
+                <option value="option2">Опція 2</option>
+            </optgroup>
+            <optgroup label="Група 2">
+                <option value="option3">Опція 3</option>
+                <option value="option4">Опція 4</option>
+            </optgroup>
+        </select>
+
+        <br><br>
+
+        <!-- Демонстрація списку множинного вибору -->
+        <label for="multi-select">Виберіть декілька опцій:</label>
+        <select id="multi-select" name="multi-select[]" multiple>
+            <option value="optionX">Опція X</option>
+            <option value="optionY">Опція Y</option>
+            <option value="optionZ">Опція Z</option>
+        </select>
+
+        <br><br>
+
+        <!-- Приклад форми з можливістю скидання в початковий стан -->
+        <input type="reset" value="Очистити форму">
+
+        <br><br>
+
+        <!-- Демонстрація використання семантично нейтральної кнопки і зв'язки її з обробником події -->
+        <a href="#" onClick='alert("Поставте 50!!!")'>Тиць!</a>
+
+    </form>
+
+</body>
+</html>
